@@ -7,6 +7,8 @@ import purpleCandy from './imgs/purple-candy.png';
 import greenCandy from './imgs/green-candy.png';
 import blank from './imgs/blank.png';
 import ScoreBoard from './components/Scoreboard';
+import ConfettiExplosion from 'react-confetti-explosion';
+
 
 const width = 8
 const candyColors= [
@@ -172,6 +174,8 @@ const App = () => {
 
     return (
         <div className="app">
+          <ConfettiExplosion/>
+          <h1 className='title'>Candy Crush</h1>
             <div className="game">
                 {currentColorArrangement.map((candyColor, index) => (
                     <img

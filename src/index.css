@@ -1,6 +1,16 @@
-.App{
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
+body{
+  background-color: aquamarine;
+
+}
+
+.app{
   display: flex;
   padding: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .game{
@@ -8,9 +18,59 @@
   height: 560px;
   display: flex;
   flex-wrap: wrap;
+  margin: 20px 20px;
 }
 
 .game img {
   width: 70px;
   height: 70px;
 }
+
+.score-board {
+  background-color: palevioletred;
+  border-radius: 10%;
+  border: 8px double rgb(180, 232, 215);
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+h2 {
+  color: white;
+  font-family: 'Holtwood One SC', serif;
+}
+
+.title {
+  color: rgb(229, 121, 157);
+  border-bottom: 8px double white;
+  font-family: 'Holtwood One SC', serif;
+
+}
+
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-family: 'Lato', 
+}
+
+.blink {
+  animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
